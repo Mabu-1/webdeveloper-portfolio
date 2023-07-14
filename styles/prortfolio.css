@@ -148,7 +148,7 @@ main section {
     color: #757575;
 }
 
-.info-desciption {
+.info-description {
     font-weight: 800;
 }
 
@@ -255,4 +255,63 @@ textarea {
     border: 0;
     width: 100%;
 
+}
+
+/* responsive styles */
+/* mobile devices */
+
+@media screen and (max-width:576px)
+{
+    .header{
+        background-image: none;
+    }
+
+   .banner .profile-pic
+   {
+    width: 100%;
+   }
+ nav>ul, nav, .skills-container, .resume-container,.banner,footer
+  {
+    flex-direction: column;
+  }
+  footer,.about{
+    padding: 10px;
+  }
+
+  .footer-column
+  {
+    width: 100%;
+  }
+  .banner,#what-i-do-description
+  {
+    padding: 20px;
+  }
+
+  .contact input[type="text"],.contact input[type="email"],
+textarea
+
+{
+    width: 80%;
+}
+nav >ul
+{
+    gap: 10px;
+}
+.btn-primary
+{
+    margin-bottom: 15px;
+}
+}
+
+@media screen and (min-width:576px)and (max-width:960px)
+{
+    .footer
+    {
+        padding: 30px;
+    }
+
+    .btn-primary
+{
+    margin-bottom: 15px;
+}
 }
